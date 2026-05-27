@@ -1,6 +1,6 @@
 # company-research-skill
 
-用「三个问题 × 五个动作」框架快速拆解一家陌生公司（方法来源：[dontbesilent](https://www.bilibili.com/video/BV1mqLJ6CERW/)）。核心不是堆数据，而是**用对的问题把用户推到独立判断的阶段**。
+用「三个问题 × 五个动作」框架快速拆解一家陌生公司（方法来源：[【@迪迪碎碎念_AI】](https://www.bilibili.com/video/BV1mqLJ6CERW/)）。核心不是堆数据，而是**用对的问题把用户推到独立判断的阶段**。
 
 ## 框架总览
 
