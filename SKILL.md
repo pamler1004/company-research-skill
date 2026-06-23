@@ -5,7 +5,7 @@ description: |
 license: MIT
 metadata:
   author: claudian
-  version: "2.6.0"
+  version: "1.0"
   risk_level: read_only
   requires_login: false
   requires_mcp: false
@@ -358,7 +358,7 @@ title: "[公司名] 公司拆解"
 created: YYYY-MM-DD HH-mm
 type: 公司研究
 status: draft
-skill: company-research v2.4.0
+skill: company-research v1.0
 tags:
   - 商业分析
   - 公司研究
