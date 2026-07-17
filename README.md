@@ -47,7 +47,29 @@
 
 ## 安装
 
-将 `SKILL.md` 放入 Claude Code 的 `~/.claude/skills/company-research/` 目录即可。
+`SKILL.md` 是跨 agent 的开放格式（由 Anthropic 提出，Claude Code、Codex CLI、GitHub Copilot 等通用），同一份文件可直接装进任意兼容 agent 的 skills 目录。
+
+### 一行命令
+
+```bash
+# Claude Code
+mkdir -p ~/.claude/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.claude/skills/company-research/SKILL.md
+
+# Codex CLI
+mkdir -p ~/.codex/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.codex/skills/company-research/SKILL.md
+```
+
+### 其它兼容 agent
+
+把同一份 `SKILL.md` 放进对应目录即可，无需改动文件内容：
+
+| Agent | Skills 目录 | 调用方式 |
+|-------|------------|---------|
+| Claude Code | `~/.claude/skills/company-research/` | 描述命中时自动触发 |
+| Codex CLI | `~/.codex/skills/company-research/` | `$company-research` 或 `/skills` |
+| GitHub Copilot | `.github/skills/company-research/`（项目级） | Copilot 编码 agent |
+
+> 手动安装：克隆仓库后把 `SKILL.md` 拷到上述任一目录；或用其它 agent 的 plugin/skill 市场按本仓库地址安装。
 
 ## License
 
