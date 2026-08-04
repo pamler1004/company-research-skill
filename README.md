@@ -47,16 +47,16 @@
 
 ## 安装
 
-`SKILL.md` 是跨 agent 的开放格式（由 Anthropic 提出，Claude Code、Codex CLI、GitHub Copilot 等通用），同一份文件可直接装进任意兼容 agent 的 skills 目录。
+`SKILL.md` 可被多种兼容 Agent 使用；本仓库优先维护并推荐 **Codex** 使用方式。
 
 ### 一行命令
 
 ```bash
 # Claude Code
-mkdir -p ~/.claude/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.claude/skills/company-research/SKILL.md
+mkdir -p ~/.claude/skills/leon-company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.claude/skills/leon-company-research/SKILL.md
 
 # Codex CLI
-mkdir -p ~/.codex/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.codex/skills/company-research/SKILL.md
+mkdir -p ~/.codex/skills/leon-company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.codex/skills/leon-company-research/SKILL.md
 ```
 
 ### 其它兼容 agent
@@ -65,11 +65,17 @@ mkdir -p ~/.codex/skills/company-research && curl -fsSL https://raw.githubuserco
 
 | Agent | Skills 目录 | 调用方式 |
 |-------|------------|---------|
-| Claude Code | `~/.claude/skills/company-research/` | 描述命中时自动触发 |
-| Codex CLI | `~/.codex/skills/company-research/` | `$company-research` 或 `/skills` |
-| GitHub Copilot | `.github/skills/company-research/`（项目级） | Copilot 编码 agent |
+| Claude Code | `~/.claude/skills/leon-company-research/` | 描述命中时自动触发 |
+| Codex | `~/.codex/skills/leon-company-research/` | `$leon-company-research` 或描述命中 |
+| GitHub Copilot | `.github/skills/leon-company-research/`（项目级） | Copilot 编码 agent |
 
 > 手动安装：克隆仓库后把 `SKILL.md` 拷到上述任一目录；或用其它 agent 的 plugin/skill 市场按本仓库地址安装。
+
+## 数据源与责任边界
+
+- Longbridge MCP 与相关 `longbridge-*` Skill 是可选增强，不随本仓库提供。
+- 没有专用金融数据工具时，可使用公司官网 IR、监管披露和公开网络资料；必须保留来源和数据日期。
+- 输出用于研究和形成判断，不构成投资建议。财务数据、估值与一致预期在对外使用前应再次核验。
 
 ## License
 

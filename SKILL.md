@@ -1,5 +1,5 @@
 ---
-name: company-research
+name: leon-company-research
 description: |
   用「三个问题 × 五个动作」框架快速拆解一家陌生公司。不堆数据，而是帮用户从"听过名字"推进到"形成独立判断"。触发场景：用户想研究/拆解/搞懂一家公司（「帮我研究 XX」「拆解 XX」「XX 的商业模式」「XX 凭什么值这么多钱」「XX 是一家什么公司」）。不触发：简单数据查询（「XX 股价多少」「XX 财报」「XX PE」）——那些交给 longbridge-quote / longbridge-fundamental。
 license: MIT
@@ -362,15 +362,15 @@ metadata:
 
 ## 输出格式
 
-分析完成后，创建 Obsidian 笔记保存到仓库。
+分析完成后，先在对话中交付完整结果。只有用户明确要求写入文件时，才创建 Markdown 笔记。
 
 ### 笔记路径
 
-```
-/Users/leon/Library/CloudStorage/OneDrive-个人/应用/remotely-save/leon_vault/10-Active/公司研究/[公司名] - 公司拆解 [YYYYMMDD].md
+```text
+<$OUTPUT_DIR>/[公司名] - 公司拆解 [YYYYMMDD].md
 ```
 
-> 仓库根目录：`/Users/leon/Library/CloudStorage/OneDrive-个人/应用/remotely-save/leon_vault/`，笔记落到 `10-Active/公司研究/` 下。
+`$OUTPUT_DIR` 必须来自用户本次明确提供的目录，或用户已有且已授权使用的配置。无法确定时先询问一次；不得猜测 Obsidian vault、本机云盘或其他私人目录。用户未要求落盘时，不创建文件。
 
 ### 笔记模板
 
@@ -380,7 +380,7 @@ title: "[公司名] 公司拆解"
 created: YYYY-MM-DD HH-mm
 type: 公司研究
 status: draft
-skill: company-research v1.0
+skill: leon-company-research v1.0
 tags:
   - 商业分析
   - 公司研究
@@ -640,7 +640,7 @@ quadrantChart
 | 财报季分析 | `longbridge-earnings` |
 | **从零搞懂一家陌生公司，形成自己的判断** | **`company-research`（本 skill）** |
 
-`company-research` 和 `longbridge-company-tearsheet` 的区别：后者是一页纸数据快照，前者是结构化的思考框架。两者可以互补——先用 tearsheet 拿数据，再用本框架进行分析。
+`leon-company-research` 和 `longbridge-company-tearsheet` 的区别：后者是一页纸数据快照，前者是结构化的思考框架。两者可以互补——先用 tearsheet 拿数据，再用本框架进行分析。
 
 ---
 
