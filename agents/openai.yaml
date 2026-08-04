@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Research"
+  short_description: "按三个问题拆解公司的业务、护城河与风险"
+  default_prompt: "Use $company-research to structure a company research request and separate facts, interpretations, and risks."

@@ -1,5 +1,5 @@
 ---
-name: leon-company-research
+name: company-research
 description: |
   用「三个问题 × 五个动作」框架快速拆解一家陌生公司。不堆数据，而是帮用户从"听过名字"推进到"形成独立判断"。触发场景：用户想研究/拆解/搞懂一家公司（「帮我研究 XX」「拆解 XX」「XX 的商业模式」「XX 凭什么值这么多钱」「XX 是一家什么公司」）。不触发：简单数据查询（「XX 股价多少」「XX 财报」「XX PE」）——那些交给 longbridge-quote / longbridge-fundamental。
 license: MIT
@@ -380,7 +380,7 @@ title: "[公司名] 公司拆解"
 created: YYYY-MM-DD HH-mm
 type: 公司研究
 status: draft
-skill: leon-company-research v1.0
+skill: company-research v1.0
 tags:
   - 商业分析
   - 公司研究
@@ -640,7 +640,7 @@ quadrantChart
 | 财报季分析 | `longbridge-earnings` |
 | **从零搞懂一家陌生公司，形成自己的判断** | **`company-research`（本 skill）** |
 
-`leon-company-research` 和 `longbridge-company-tearsheet` 的区别：后者是一页纸数据快照，前者是结构化的思考框架。两者可以互补——先用 tearsheet 拿数据，再用本框架进行分析。
+`company-research` 和 `longbridge-company-tearsheet` 的区别：后者是一页纸数据快照，前者是结构化的思考框架。两者可以互补——先用 tearsheet 拿数据，再用本框架进行分析。
 
 ---
 

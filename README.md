@@ -53,10 +53,10 @@
 
 ```bash
 # Claude Code
-mkdir -p ~/.claude/skills/leon-company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.claude/skills/leon-company-research/SKILL.md
+mkdir -p ~/.claude/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.claude/skills/company-research/SKILL.md
 
 # Codex CLI
-mkdir -p ~/.codex/skills/leon-company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.codex/skills/leon-company-research/SKILL.md
+mkdir -p ~/.codex/skills/company-research && curl -fsSL https://raw.githubusercontent.com/pamler1004/company-research-skill/main/SKILL.md -o ~/.codex/skills/company-research/SKILL.md
 ```
 
 ### 其它兼容 agent
@@ -65,9 +65,9 @@ mkdir -p ~/.codex/skills/leon-company-research && curl -fsSL https://raw.githubu
 
 | Agent | Skills 目录 | 调用方式 |
 |-------|------------|---------|
-| Claude Code | `~/.claude/skills/leon-company-research/` | 描述命中时自动触发 |
-| Codex | `~/.codex/skills/leon-company-research/` | `$leon-company-research` 或描述命中 |
-| GitHub Copilot | `.github/skills/leon-company-research/`（项目级） | Copilot 编码 agent |
+| Claude Code | `~/.claude/skills/company-research/` | 描述命中时自动触发 |
+| Codex | `~/.codex/skills/company-research/` | `$company-research` 或描述命中 |
+| GitHub Copilot | `.github/skills/company-research/`（项目级） | Copilot 编码 agent |
 
 > 手动安装：克隆仓库后把 `SKILL.md` 拷到上述任一目录；或用其它 agent 的 plugin/skill 市场按本仓库地址安装。
 
